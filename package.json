@@ -1,15 +1,15 @@
 {
-  "name": "OpenShift-Sample-App",
+  "name": "Say Hello",
   "version": "1.0.0",
-  "description": "OpenShift Sample Application",
+  "description": "Say Hello Telegram Bot",
   "keywords": [
-    "OpenShift",
+    "bot",
     "Node.js",
     "application",
-    "openshift"
+    "telegram"
   ],
   "author": {
-    "name": "OpenShift",
+    "name": "Jalalx",
     "email": "ramr@example.org",
     "url": "http://www.openshift.com/"
   },
@@ -29,5 +29,5 @@
   "devDependencies": {},
   "bundleDependencies": [],
   "private": true,
-  "main": "server.js"
+  "main": "app.js"
 }
