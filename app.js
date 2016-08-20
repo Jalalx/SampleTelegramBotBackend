@@ -11,6 +11,11 @@ bot.onText(/\/echo (.+)/, function (msg, match) {
   bot.sendMessage(fromId, resp);
 });
 
+bot.onText(/\/echo2 (.+)/, function (msg, match) {
+  var fromId = msg.from.id;
+  var resp = match[1];
+  bot.sendMessage(fromId, resp + '\r\n From Jalal');
+});
 // Any kind of message
 bot.on('message', function (msg) {
 //   var chatId = msg.chat.id;
