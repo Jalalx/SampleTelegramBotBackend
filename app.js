@@ -8,9 +8,9 @@ var bot = new TelegramBot(token, {polling: true});
 bot.onText(/\/echo (.+)/, function (msg, match) {
   var fromId = msg.from.id;
   var resp = match[1];
-  bot.sendMessage(fromId, resp);
+  bot.sendMessage(fromId, resp + '\r\n Reply from OpenShift hosted app.');
 });
-
+/*
 bot.onText(/\/echo2 (.+)/, function (msg, match) {
   var fromId = msg.from.id;
   var resp = match[1];
@@ -25,3 +25,4 @@ bot.on('message', function (msg) {
 var fromId = msg.from.id;
   bot.sendMessage(fromId, "write with /echo");
 });
+*/
